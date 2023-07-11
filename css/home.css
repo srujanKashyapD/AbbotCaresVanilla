@@ -1,0 +1,270 @@
+@import url(carousel.css);
+@import url(nav.css);
+
+:root {
+    --theme-color: #002A3A;
+    --bronze-color: #895E1A;
+    --border-grey: #888B8D;
+    --light-grey: #ECECEC;
+    --font-family: 'Roboto';
+    --font-weight-900: 900;
+    --font-weight-700: 700;
+    --font-size: 24px;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+/* Carepoint Card */
+
+.carepoint-card {
+    width: 90%;
+    margin-inline: 5%;
+    border: 1px solid white;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    top: -100px;
+    background: white;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.31);
+}
+
+.carepoint-card__content {
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.carepoint-card h2 {
+    color: var(--theme-color);
+    font-weight: var(--font-weight-900);
+    text-shadow: 0px 1px, 1px 0px, 1px 0px;
+    letter-spacing: 3px;
+}
+
+
+.carepoint-card h1 {
+    color: var(--theme-color);
+    font-weight: var(--font-weight-900);
+    text-shadow: 0px 1px, 1px 0px, 1px 0px;
+    letter-spacing: 3px;
+}
+
+.level-progress {
+    margin-top: 10%;
+}
+
+.bronze-points {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.level-progress h2 {
+    color: var(--bronze-color);
+    font-weight: var(--font-weight-700);
+    margin-top: 2%;
+}
+
+/* .progress {
+    background-color: white;
+}
+
+progress {
+    background-color: var(--bronze-color);
+    width: 100%;
+    margin-right: 30%;
+} */
+progress[value] {
+    width: 80%;
+    height: 1rem;
+}
+
+/* Card Options */
+
+/* .card-options-container {
+    display: flex;
+    margin-inline: 1.5rem;
+    gap: 2rem;
+    margin-top: -2rem;
+}
+
+.card-options {
+    border-radius: 10px;
+    width: 40rem;
+    height: 5rem;
+    display: flex;
+    border: 2px solid black;
+    color: white;
+    background-image: url(../asstets/images/gradient.png);
+}
+.card-backround-img {
+    position: relative;
+    z-index: 0;
+    left: 4rem;
+
+}
+
+#card-option-2 {
+    justify-items: end;
+
+} */
+
+.card-options-container {
+    display: flex;
+    justify-content: center;
+}
+.card-options {
+    /* flex: 1; */
+    /* margin-inline: auto; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    
+}
+.card-backround-img {
+    grid-row : 1 / 2;
+    grid-column: 1 / 2;
+    z-index: 1;
+}
+.card-backround-gradient {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    z-index: 2;
+}
+.card-options p {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    color: white;
+    z-index: 3;
+    font-weight: var(--font-weight-700);
+}
+
+
+
+
+/* Round Card Options */
+
+.card-options-round-container {
+    display: flex;
+    margin-inline: 2rem;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.card-options-round-content div {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.round-icons {
+    margin-inline: 1rem;
+}
+
+/* Section Break Line */
+.section-break-line {
+    background-color: var(--light-grey);
+    height: 1dvh;
+    margin-top: 1rem;
+}
+
+#section-break-2 {
+    margin-top: 2.5rem;
+}
+
+/* Section Heading */
+.section-heading h2 {
+    font-weight: var(--font-weight-700);
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+/* Grid Cards */
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 1rem;
+}
+
+/* Scrolling Cards */
+.scrolling-wrapper {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    .scrolling-card {
+        flex: 0 0 auto;
+    }
+}
+
+.scrolling-card img {
+    height: 182px !important;
+}
+
+/* Bottom Nav Bar */
+
+.bottom-nav-bar {
+
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: radial-gradient(circle at 50% 0%, transparent 15%, white 27%);
+}
+
+.bottom-nav-bar-item {
+    flex: 1;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+}
+
+.bottom-nav-bar-item img {
+    justify-self: center;
+}
+
+.bottom-nav-bar p {
+    font-size: x-small;
+    text-align: center;
+    font-weight: var(--font-weight-700);
+}
+
+.qr-code-circle {
+    height: 3rem;
+    width: 7rem;
+    border-radius: 0 0 4rem 4rem;
+    background-color: rgba(1, 1, 1, 0.1);
+    -webkit-box-shadow: inset 0px -5px 14px 0px var(--border-grey);
+    box-shadow: inset 0px -5px 14px 0px var(--border-grey);
+    position: relative;
+    bottom: 0rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3;
+}
+
+.qr-code-holder {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    bottom: 3.5rem;
+    left: 0.5rem;
+    display: flex;
+}
+
+.qr-code-holder img {
+    align-self: center;
+    margin-inline: auto;
+}

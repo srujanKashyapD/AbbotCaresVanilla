@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="../js/multistepform.js" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-color">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../asstets/logo/My Abbott Cares Logo v030323-White.png" alt="MAC Logo" loading="lazy" />
+                <span class="navbar-brand-text pl-2">MY ABBOT CARES</span>
+                <img src="../asstets/logo/359-3592458_abbott-logo-white-png-transparent-png-removebg-preview 1.png"
+                    alt="Abbot Logo" loading="lazy" />
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <p id="create-pass">Create Password</p>
+    </div>
+    <form action="#" class="form">
+        <!-- Progress bar -->
+        <div class="progressbar">
+            <div class="progress" id="progress"></div>
+
+            <div class="progress-step progress-step-active" data-title="Create Password"></div>
+            <div class="progress-step" data-title="Registration
+            Details"></div>
+            <div class="progress-step" data-title="SMS Verification"></div>
+            <!-- <div class="progress-step" data-title="Password"></div> -->
+        </div>
+
+        <!-- Steps -->
+        <div class="form-step form-step-active">
+            <div class="container">
+                <label id="pass-label" class="mb-1" for="password">Password</label>
+                <input class="input-box" type="password" name="password" id="password" />
+            </div>
+            <p id="pass-requirement">Password must have minimum 8 characters, contains at least 1 numeric character (eg.
+                1,2,3...) and 1 special character (eg. @!?_*)</p>
+            <div class="container">
+                <label class="mb-1" id="pass-label" for="cnf-password">Confirm Password</label>
+                <input class="input-box" type="text" name="cnf-password" id="cnf-password" />
+            </div>
+            <div class="container">
+                <div class="row">
+                    <button type="button" class="btn btn-next btn-primary mt-3 col-12">Next</button>
+                </div>
+            </div>
+        </div>
+        <div class="form-step">
+            <div class="container">
+                <p>
+                <p class="red-asterix">*</p>Mandatory Field</p>
+            </div>
+            <div class="container">
+                <label class="input-text-label" for="first-name">First Name<p class="red-asterix">*</p></label>
+                <input class="input-box" type="text" name="first-name" id="fname" />
+            </div>
+            <div class="container">
+                <label class="input-text-label" for="last-name">Last Name<p class="red-asterix">*</p></label>
+                <input class="input-box" type="text" name="last-name" id="lname" />
+            </div>
+            <div class="container">
+                <label class="input-text-label" for="email">Email Address<p class="red-asterix">*</p></label>
+                <input class="input-box" type="text" name="email" id="email" />
+            </div>
+            <div class="container">
+                <label class="input-text-label" for="brand">Select Brand you Purchased<p class="red-asterix">*</p>
+                </label>
+                <select class="select-box" name="brand" id="brands">
+                    <option value="ensure gold">Ensure Gold</option>
+                    <option value="Pediasure">Pediasure</option>
+                    <option value="Similac Gold Gain Plus S3">Similac Gold Gain Plus S3</option>
+                    <option value="Similac Gold Gain Plus S4">Similac Gold Gain Plus S4</option>
+                </select>
+            </div>
+            <div class="container">
+                <input type="checkbox" id="terms" name="terms" value="terms">
+                <label class="check-text-label" for="terms"> I agree to the Abbott <a>Terms and Conditions</a> and
+                    the <a>Privacy Policy</a></label>
+            </div>
+            <div class="container">
+                <input type="checkbox" id="data" name="data" value="p-data">
+                <label class="check-text-label" for="data"> I authorise Abbott to disclose my personal data* to selected
+                    third parties to deliver value added services to me as a My Abbott Cares member.</label>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <button type="button" class="btn btn-next btn-primary mt-3 col-12">Register</button>
+                </div>
+            </div>
+        </div>
+        <div class="form-step">
+            <div class="number-info">
+                <p>Please enter the SMS verification code sent
+                    to +60 XX XXX 4959</p>
+            </div>
+            <div class="number-info text-justify mb-2">
+                <a><u>Change number</u></a>
+            </div>
+            <div class="otp-field">
+                <input type="text" maxlength="1" />
+                <input type="text" maxlength="1" />
+                <input type="text" maxlength="1" />
+                <input type="text" maxlength="1" />
+                <input type="text" maxlength="1" />
+                <input type="text" maxlength="1" />
+            </div>
+            <div class="container">
+                <div class="row">
+                    <button type="button" class="btn btn-primary mt-3 col-10 offset-1">Next</button>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

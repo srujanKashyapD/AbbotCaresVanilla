@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="#">
+                        <img src="../asstets/logo/My Abbott Cares Logo v030323-White.png" alt="MAC Logo"
+                            loading="lazy" />
+                        <h1>MY ABBOT CARES</h1>
+                    </a>
+                </div>
+                <div class="nav-brand-logo">
+                    <img src="../asstets/logo/359-3592458_abbott-logo-white-png-transparent-png-removebg-preview 1.png"
+                        alt="Abbot Logo" loading="lazy" />
+                </div>
+                <a href="javascript:void(0);" class="ham-icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators c-indicator">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../asstets/images/iStock-507626938 1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../asstets/images/iStock-507626938 1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../asstets/images/iStock-507626938 1.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="carepoint-card level-3">
+        <div class="carepoint-card__content">
+            <h2>Welcome, Username!</h2>
+            <h1>101 CarePoints</h1>
+            <div class="level-progress">
+                <div class="bronze-points">
+                    <h2>BRONZE</h2>
+                    <img src="../asstets/images/star.svg" alt="star" />
+                    <img src="../asstets/images/right-arrow.svg" alt="right arrow">
+                </div>
+
+                <div class="progress">
+                    <progress id="file" value="32" max="100"></progress>
+                </div>
+                <p>20 more CarePoints to reach Silver</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-options-container">
+        <div class="card-options" id="card-option-1">
+            <img class="card-backround-img" src="../asstets/images/Intersect.png" alt="backround-image">
+            <img class="card-backround-gradient" src="../asstets/images/gradient.png" alt="backround-image">
+            <p>Scan for <br>CarePoints</p>
+            <img src="../asstets/images/mdi_qrcode-scan.svg" alt="qr code">
+        </div>
+        <div class="card-options" id="card-option-2">
+            <img class="card-backround-img" src="../asstets/images/Intersect (1).png" alt="backround-image">
+            <img class="card-backround-gradient" src="../asstets/images/gradient.png" alt="backround-image">
+            <p>Redemptions</p>
+            <img src="../asstets/images/gift.svg" alt="gift">
+        </div>
+    </div>
+
+    <div class="card-options-round-container">
+        <div class="card-options-round-content" id="card-options-round-content-1">
+            <img src="../asstets/images/shining-star-icon.png" alt="shining star" class="round-icons">
+            <div>CarePoints History</div>
+        </div>
+        <div class="card-options-round-content" id="card-options-round-content-2">
+            <img src="../asstets/images/gift-icon.png" alt="gift icon" class="round-icons">
+            <div>Redemption Status</div>
+        </div>
+        <div class="card-options-round-content" id="card-options-round-content-3">
+            <img src="../asstets/images/badge.png" alt="badge" class="round-icons">
+            <div>Unlock Badges</div>
+        </div>
+    </div>
+
+    <div class="section-break-line">
+    </div>
+    <div class="section-heading">
+        <h2>What’s New</h2>
+    </div>
+
+    <div class="whats-new-carousel-container d-flex justify-content-center">
+        <div id="carouselIndicators" class="carousel slide whats-new-carousel" data-bs-ride="carousel">
+            <div class="carousel-indicators whats-new-c-indicator">
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../asstets/images/c1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../asstets/images/c2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../asstets/images/c3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../asstets/images/c4.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-break-line" id="section-break-2">
+    </div>
+    <div class="section-heading">
+        <h2>Redemption Catalogue</h2>
+    </div>
+
+    <div class="grid-cards-container d-flex justify-content-center">
+        <div class="grid-cards">
+            <div class="grid-card-content" id="grid-card-1">
+                <img src="../asstets/images/abbot-prod.svg" alt="Abbot Products">
+            </div>
+            <div class="grid-card-content" id="grid-card-2">
+                <img src="../asstets/images/voucher.svg" alt="Voucher">
+            </div>
+            <div class="grid-card-content" id="grid-card-3">
+                <img src="../asstets/images/child-edu.svg" alt="Child Education">
+            </div>
+            <div class="grid-card-content" id="grid-card-4">
+                <img src="../asstets/images/health-fitness.svg" alt="Health and Fitness">
+            </div>
+            <div class="grid-card-content" id="grid-card-5">
+                <img src="../asstets/images/household.svg" alt="Household">
+            </div>
+            <div class="grid-card-content" id="grid-card-6">
+                <img src="../asstets/images/view-all.svg" alt="View All">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section-break-line">
+    </div>
+
+    <div class="section-heading">
+        <h2>Customer Reviews</h2>
+    </div>
+
+    <div class="scrolling-wrapper">
+        <div class="scrolling-card">
+            <img src="../asstets/images/Reviewcr1.png" alt="Review 1">
+        </div>
+        <div class="scrolling-card">
+            <img src="../asstets/images/Reviewcr2.png" alt="Review 2">
+        </div>
+        <div class="scrolling-card">
+            <img src="../asstets/images/Review.png" alt="Review 3">
+        </div>
+    </div>
+
+
+    <div class="bottom-nav-bar">
+        <div class="bottom-nav-bar-item">
+            <img src="../asstets/images/home-icon.png" alt="home icon">
+            <p>My Abbot Cares</p>
+        </div>
+        <div class="bottom-nav-bar-item">
+            <img src="../asstets/images/heart-menu.png" alt="heart icon">
+            <p>Carepoints History</p>
+        </div>
+        <div class="bottom-nav-bar-item">
+            <div class="qr-code-circle">
+                <div class="qr-code-holder">
+                    <img src="../asstets/images/qr-code2.svg" alt="QR Code Icon">
+                </div>
+            </div>
+            <p>Scan for CarePoints</p>
+        </div>
+        <div class="bottom-nav-bar-item">
+            <img src="../asstets/images/home-icon.png" alt="help icon">
+            <p>Help Center</p>
+        </div>
+        <div class="bottom-nav-bar-item">
+            <img src="../asstets/images/profile.png" alt="profile icon">
+            <p>My Profile</p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

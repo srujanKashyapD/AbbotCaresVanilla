@@ -1,0 +1,407 @@
+.navbar-brand-text {
+    position: absolute;
+    left: 14.36%;
+    right: 28.21%;
+    top: 30.36%;
+    bottom: 28.57%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+}
+
+.navbar-color {
+    background: #002A3A;
+}
+
+.carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background-color: #404040;
+
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-caption {
+    border-radius: 10%;
+    background: linear-gradient(354.77deg, rgba(0, 0, 0, 0.6) 33.84%, rgba(120, 189, 231, 0) 90.71%);
+    left: 0;
+    right: 0;
+    bottom: 0.3em;
+}
+
+.sign-up {
+    align-items: center;
+    margin: 10vh 0 0 0;
+}
+
+#sign-up-heading {
+
+    padding: 0 5vw 5vw 5vw;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #0D2042;
+}
+
+#sign-up-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding: 0 18vw 0 18vw;
+    color: #0B1932;
+
+}
+
+#country-code {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #0033A1;
+    border-radius: 6px;
+    width: 10%;
+    margin-left: 8vw;
+    margin-right: 3vw;
+    margin-top: 5vh;
+}
+
+#phone-number {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #0033A1;
+    border-radius: 6px;
+    width: 60%;
+    margin-right: 10vw;
+    margin-top: 5vh;
+}
+
+.btn {
+    background: #002A3A;
+    border-radius: 4px;
+}
+
+.login-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #0B1932;
+}
+
+#create-pass {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #000000;
+}
+
+/* Progress Bar */
+.progressbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 4rem;
+}
+
+.progressbar::before,
+.progress {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    z-index: -1;
+    border: 0.05rem solid #002A3A;
+}
+
+.progress {
+    background-color: #002A3A;
+    width: 0%;
+    transition: 0.3s;
+}
+
+.progress-step {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.05rem solid #002A3A;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #000000;
+}
+
+
+
+.progress-step::after {
+    content: attr(data-title);
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    font-size: 0.85rem;
+    color: #000000;
+}
+
+.progress-step-active {
+    background-color: #002A3A;
+    color: #f3f3f3;
+}
+
+/* form */
+
+.form {
+    width: clamp(320px, 30%, 430px);
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.form-step {
+    display: none;
+    transform-origin: top;
+    animation: animate 0.5s;
+}
+
+.form-step-active {
+    display: block;
+}
+
+
+
+@keyframes animate {
+    from {
+        transform: scale(1, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+#pass-label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+
+}
+
+#pass-requirement {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+    margin-top: 0.2rem;
+    margin-left: 1rem;
+}
+
+.red-asterix {
+    color: red;
+    display: inline;
+}
+
+.input-text-label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.input-box {
+    background: #FFFFFF;
+    border: 1px solid #0033A1;
+    border-radius: 6px;
+    padding: 5px;
+    margin-bottom: 1rem;
+}
+
+.select-box {
+    width: 16rem;
+    background: #FFFFFF;
+    border: 1px solid #0033A1;
+    border-radius: 6px;
+    padding: 5px;
+    margin-bottom: 1rem;
+}
+
+.check-text-label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    display: inline;
+}
+
+.otp-field {
+    display: flex;
+    justify-content: center;
+}
+
+.otp-field input {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 32px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 2px;
+    background: #D9D9D9;
+    font-weight: bold;
+    color: #000000;
+    outline: none;
+    transition: all 0.1s;
+}
+
+.otp-field input:focus {
+    border: 2px solid #a527ff;
+    box-shadow: 0 0 2px 2px #a527ff6a;
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+.space {
+    margin-right: 1rem !important;
+}
+
+.number-info {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #0B1932;
+}
+
+#keep-me-logged {
+    margin-left: 2.56rem;
+}
+
+.forgot-pass {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration-line: underline;
+
+    color: #002A3A;
+
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+.login-pass {
+    margin-left: 13%;
+    margin-top: 5%;
+}
+
+.input-text-fg {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0B1932;
+    margin-left: 11%;
+    margin-bottom: -4%;
+    margin-top: 10%;
+}
+
+.phone-text-detail {
+    width: 80%;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+
+    color: #858585;
+}
+
+.success-circle {
+    height: 150px;
+    width: 150px;
+    background-color: #002A3A;
+    border-radius: 50%;
+    justify-items: center;
+}
+
+#success-modal-label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+
+    color: #000000;
+}
+
+#modal-text-info {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-inline: 1rem;
+
+    color: #000000;
+}
